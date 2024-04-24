@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" disabled>
+      <div id="buttons">
+        <button class="num" value="1" onclick="displayValue('1')">1</button>
+        <button class="num" value="2" onclick="displayValue('2')">2</button>
+        <button class="num" value="3" onclick="displayValue('3')">3</button>
+        <button class="operator" value="/" onclick="setOperator('/')">÷</button>
+        <button class="num" value="4" onclick="displayValue('4')">4</button>
+        <button class="num" value="5" onclick="displayValue('5')">5</button>
+        <button class="num" value="6" onclick="displayValue('6')">6</button>
+        <button class="operator" value="*" onclick="setOperator('*')">x</button>
+        <button class="num" value="7" onclick="displayValue('7')">7</button>
+        <button class="num" value="8" onclick="displayValue('8')">8</button>
+        <button class="num" value="9" onclick="displayValue('9')">9</button>
+        <button class="operator" value="-" onclick="setOperator('-')">-</button>
+        <button class="num" value="0" onclick="displayValue('0')">0</button>
+        <button class="num" value="." onclick="displayValue('.')">.</button>
+        <button id="clear" onclick="clearDisplay()">AC</button>
+        <button id="equals" onclick="calculateResult()">=</button>
+        <button class="operator" value="+" onclick="setOperator('+')">+</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
